@@ -5,12 +5,13 @@ import { AuthProvider } from "./context/AuthContext";
 import 'leaflet/dist/leaflet.css';
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <HashRouter>
-    <AuthProvider>
+  <BrowserRouter basename="/FleetManagerPro_Logistics-and-Transportation">
+  <AuthProvider>
     <App />
   </AuthProvider>
-  </HashRouter>
-);
+</BrowserRouter>
+)
+ 
