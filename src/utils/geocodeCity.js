@@ -11,6 +11,6 @@ export const geocodeCity = async (city) => {
     const { lat, lng } = data.results[0].geometry;
     return { lat, lng };
   } else {
-    throw new Error("Location not found");
+    throw new Error("Location not found ya");
   }
 };
