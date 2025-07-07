@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/FleetManagerPro_Logistics-and-Transportation">
       <AuthProvider>
         <Navbar />
         <AppRoutes />
