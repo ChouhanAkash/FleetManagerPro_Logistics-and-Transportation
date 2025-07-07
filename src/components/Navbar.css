@@ -1,0 +1,102 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-menu li a,
+.logout-btn {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-menu li a:hover,
+.logout-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.active-link {
+  color: #1a73e8;
+  font-weight: 600;
+  border-bottom: 2px solid #1a73e8;
+}
+.unactive{
+    color:"red";
+}
+
+.logout-btn {
+  color: #e63946;
+}
+
+.logout-btn:hover {
+  background-color: #ffe6e6;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    max-height: 500px;
+  }
+
+  .nav-menu li {
+    padding: 10px 20px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,128 @@
+/* src/pages/auth/Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: calc(100vh - 120px); /* minus navbar & footer */
+  background: #f9f9f9;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 30px 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-box button:hover {
+  background-color: #0056b3;
+}
+
+.google-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 60% !important;
+  padding: 10px 16px !important;
+
+  background-color: #fff !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.google-btn:hover {
+  background-color: #f4f4f4 !important;
+  border-color: #999 !important;
+}
+
+.google-btn i {
+  font-size: 18px !important;
+  color: #db4437 !important;
+}
+
+
+
+
+.links {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 500px) {
+  .login-container {
+    padding: 20px 10px;
+  }
+
+  .login-box {
+    padding: 20px;
+  }
+
+  .login-box h2 {
+    font-size: 18px;
+  }
+
+  .login-box input,
+  .login-box button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .google-btn {
+    gap: 6px;
+  }
+}
