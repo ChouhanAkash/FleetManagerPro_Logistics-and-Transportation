@@ -1,7 +1,7 @@
 // src/pages/TripLogs.jsx
 import { useState } from 'react';
 import { useAuth } from '../../hooks/useAuth';
-import { geocodeCity } from '../../utils/geocodecity';
+import { geocodeCity } from '../../utils/geocodeCity';
 import { db } from '../../firebase';
 import { collection, addDoc, Timestamp } from 'firebase/firestore';
 import './trip.css';

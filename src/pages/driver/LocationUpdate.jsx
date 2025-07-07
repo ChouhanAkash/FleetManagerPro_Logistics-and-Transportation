@@ -11,7 +11,7 @@ import {
   limit,
   updateDoc
 } from 'firebase/firestore';
-import { geocodeCity } from '../../utils/geocodecity';
+import { geocodeCity } from '../../utils/geocodeCity';
 import './LocationUpdate.css';
 
 const LocationUpdate = () => {
