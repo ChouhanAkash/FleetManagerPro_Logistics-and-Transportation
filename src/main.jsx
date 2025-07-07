@@ -8,7 +8,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/FleetManagerPro_Logistics-and-Transportation">
+  <BrowserRouter basename="/">
   <AuthProvider>
     <App />
   </AuthProvider>
